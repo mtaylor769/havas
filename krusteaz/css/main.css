@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:100,200,300,400,500,600,700);
+
+* {
+	outline:none;
+}
+/* TODO: add media queries */
+body, .ui-page-theme-a { background-color: #fff; font-family: 'Nunito', sans-serif; font-weight: 100;}
+body.font-size1 {font-size: 14px;}
+body.font-size2 {font-size: 18px;}
+body.font-size3 {font-size: 22px;}
+ul {list-style-type: none; padding: 0; margin:0; }
+li {display: inline-block; }
+p {margin:0;}
+
+@media all {
+    .site { position:relative; width: 1145px; margin: 0 auto; text-align: center;}
+    #page-content {padding-bottom:35px;}
+    .home-page-content {position: relative;background-color: #fff;}
+    #main-image-container { width: 1145px; height:734px; background: #fff url('../img/cookie_board.png') center center no-repeat;background-size: contain;}
+    .hero-container { position:relative; display:block;z-index: 2}
+    .hero-container:hover .hero-rollover {padding-top: 0;}
+    .hero-rollover { transition: height 1s; position: relative; overflow: hidden; padding-top:7px; margin-left:23px;  margin-right: 23px;  }
+    .hero-rollover-text { position:absolute; top:103px; left:0; padding:0 4px; width:100%; font-size:12px; color: #fff; text-align: center;}
+    .hero-rollover-text p {margin-bottom:4px;}
+    .hero-rollover-text b {font-weight:200;}
+
+    .hero-container.snickerdoodles {position: absolute; top:110px; left:308px;}
+    .snickerdoodles .hero-icon { width:240px; height:240px; background: url('../img/snickerdoodles_icon.png') center center no-repeat;background-size: contain;}
+    .snickerdoodles .hero-banner  { position: absolute; bottom: 15px; width:225px; height:44px; background: url('../img/snickerdoodles_banner.png') center center no-repeat;background-size: contain;}
+    .snickerdoodles .hero-rollover  {top: 132px; width:181px; height:85px; background: url('../img/snickerdoodles_rollover.png') top center no-repeat;}
+    .snickerdoodles:hover .hero-rollover  {height:202px; }
+
+    .hero-container.sugar {position: absolute; top:25px; left:850px;}
+    .sugar .hero-icon { width:263px; height:307px; background: url('../img/sugar_icon.png') center center no-repeat;background-size: contain;}
+    .sugar .hero-banner  { position: absolute; bottom: 15px; width:225px; height:44px; background: url('../img/sugar_banner.png') center center no-repeat;background-size: contain;}
+    .sugar .hero-rollover  {top: 208px; width:181px; height:75px; padding-top:7px; margin-left:23px;  margin-right: 23px; background: url('../img/sugar_rollover.png') top center no-repeat;}
+    .sugar:hover .hero-rollover  {height:192px; }
+
+    .hero-container.gingerbread {position: absolute; top:210px; left:555px;}
+    .gingerbread .hero-icon { width:289px; height:349px; background: url('../img/gingerbread_icon.png') center center no-repeat;background-size: contain;}
+    .gingerbread .hero-banner  { position: absolute; bottom: 32px; left:40px; width:225px; height:44px; background: url('../img/gingerbread_banner.png') center center no-repeat;background-size: contain;}
+    .gingerbread .hero-rollover  {top: 243px; width:181px; height:72px; padding-top:7px; margin-left:64px;  margin-right: 23px; background: url('../img/gingerbread_rollover.png') top center no-repeat;}
+    .gingerbread:hover .hero-rollover  {height:185px; }
+
+    .hero-container.shortbread {position: absolute; top:365px; left:155px;}
+    .shortbread .hero-icon { width:270px; height:271px; background: url('../img/shortbread_icon.png') center center no-repeat;background-size: contain;}
+    .shortbread .hero-banner  { position: absolute; bottom: 30px; left:43px; width:225px; height:44px; background: url('../img/shortbread_banner.png') center center no-repeat;background-size: contain;}
+    .shortbread .hero-rollover  {top: 170px; width:181px; height:72px; padding-top:7px; margin-left:64px;  margin-right: 23px; background: url('../img/shortbread_rollover.png') top center no-repeat;}
+    .shortbread:hover .hero-rollover  { height:183px; }
+
+    .hero-container.bars {position: absolute; top:402px; left:877px;}
+    .bars .hero-icon { width:267px; height:236px; background: url('../img/bars_icon.png') center center no-repeat;background-size: contain;}
+    .bars .hero-banner  { position: absolute; bottom: 15px; width:225px; height:44px; background: url('../img/bars_banner.png') center center no-repeat;background-size: contain;}
+    .bars .hero-rollover  {top: 143px; width:181px; height:72px; padding-top:7px; margin-left:23px;  margin-right: 23px; background: url('../img/bars_rollover.png') top center no-repeat;}
+    .bars:hover .hero-rollover  { height:187px; }
+
+ 
+    .carousel-container .carousel-slide { width:240px; height:286px; display:inline-block; margin:15px;}
+    .carousel-container .carousel-slide:last-child {margin-right:0;}
+    .mod1 { background: url('../img/grid_modules/module_1.png') center center no-repeat;background-size: contain;}
+    .mod2 { background: url('../img/grid_modules/module_2.png') center center no-repeat;background-size: contain;}
+    .mod3 { background: url('../img/grid_modules/module_3.png') center center no-repeat;background-size: contain;}
+    .mod4 { background: url('../img/grid_modules/module_4.png') center center no-repeat;background-size: contain;}
+    .mod5 { background: url('../img/grid_modules/module_5.png') center center no-repeat;background-size: contain;}
+    .mod6 { background: url('../img/grid_modules/module_6.png') center center no-repeat;background-size: contain;}
+    .mod7 { background: url('../img/grid_modules/module_7.png') center center no-repeat;background-size: contain;}
+    .mod8 { background: url('../img/grid_modules/module_8.png') center center no-repeat;background-size: contain;}
+
+
+    .splash-container { position: absolute; top:7%;  height:30%; width: 100%; max-width:100%; margin:0 auto; text-align: center; vertical-align: middle; background: url('../img/splash1.png') center center no-repeat; background-size: contain;z-index:99;}
+
+
+    .social-icons { position: absolute; height: 45px; top:0; right:0; padding:0; margin:0;z-index: 5;}
+    .social-icons>div {display:table-cell; width: 41px; height:45px;}
+    .icon-menu>div {border-bottom:1px solid transparent; margin-top:1px;}
+	.social-icons span {display:block;width: 42px; height:45px;cursor:pointer;}
+    .social-icons a, .social-icons a:hover, .social-icons a:link, .social-icons a:visited, .social-icons a:active {text-decoration: none;padding:2px 18px 25px;}
+    #logo { position: absolute; top:-55px; left:25%; right:25%; z-index: 1;}
+    .social-icons>.icon-menu {display:none;}
+    .facebook-icon {background: url('../img/facebook_icon.png') left top no-repeat;background-size: cover;}
+    .twitter-icon {background: url('../img/twitter_icon.png') left top no-repeat;background-size: cover;}
+    .pinterest-icon {background: url('../img/pinterest_icon.png') left top no-repeat;background-size: cover;}
+
+
+
+    #footer {width:100%; height:35px; color:#858585; font-size: 13px; font-weight: 100; border-top: 1px solid #ccc;}
+    #footer-links {width:1145px; margin:0 auto; text-align: center;}
+    #footer li {margin: 1em 25px;}
+    #footer a {color:#85714D;}
+    .copyright {float: left; margin-right:50px;}
+
+    .holiday-hits-cta {width: 90%; height:115px; margin:60px auto 40px; background: url('../img/holiday_hits_cta.png') center center no-repeat; background-size: contain;}
+    .decorating-cta {width: 90%; margin:0 auto 40px; background: url('../img/decorating_cta.png') center center no-repeat;}
+    .yellow-line { height:0; width:1000px; margin: 0 auto 25px; border-top: 2px solid #ffdf51;}
+    .whisk-icon {position:relative;top:-25px;width: 45px; height:45px; margin:0 auto; background: url('../img/whisk_icon.png') center center no-repeat; background-size: contain;}
+
+    .desktop {display:block;}
+    .mobile {display:none;}
+    .mobile-slide-link {width:100%; height:0; padding:10px 50% 100%; outline:none !important;}
+    .ui-mobile .ui-page-active {overflow: visible !important;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1145px) {
+     .site,
+    #logo,
+    .splash-container,
+    .everyone-cta, .everyday-cta
+    {margin:0;padding:0;}
+
+    .site,
+    .splash-container,
+    #main-image-container,
+    .hero-container,
+    .hero-image,
+    #carousel, .carousel-container,
+    .yellow-line,
+    .whats-yours-cta,.everyone-cta, .everyday-cta,
+    #footer, #footer-links
+    {width:100%;}
+    
+    .hotspot-container,
+    .splash-container 
+    #logo
+    {max-width: 100%;}
+
+    .hero-container,
+    .hotspot-container
+    { height:0; padding-bottom:50%;}
+    .splash-container {position: absolute; top:5%; left:5%; right:5%; bottom:5%; width:90%;margin:0 auto;}
+    .hero-button {background:none !important;}
+
+    #carousel, .carousel-container, #mobile-carousel-container {width:90%; text-align: center;}
+    .whats-yours-cta,.everyone-cta, .everyday-cta, .whats-your-cookie-cta {margin:0 auto; width:90%;}
+    .yellow-line {margin:30px auto;}
+}
+
+
+@media only screen and (max-width: 767px) {
+     .site,
+    #logo,
+    .splash-container,
+    .everyone-cta, .everyday-cta
+    {margin:0;padding:0;}
+
+    .site,
+    #logo,
+    .splash-container,
+    .hotspot-container,
+    .hero-image,
+    #carousel, .carousel-container,
+    #mobile_carousel, #mobile-carousel-container
+    .yellow-line,
+    .whats-yours-cta,.everyone-cta, .everyday-cta,
+    #footer, #footer-links
+    {width:100%;}
+
+    .site,
+    #page-content,
+    .home-page-content {height:100%;}
+    #logo { background-color: #fff; text-align: center; left:0; top:0; right:0; padding:15px;}
+    .social-icons {top:auto; right: auto; left: 0; bottom:0;}
+    .social-icons>div {float:left;}
+    .icon-menu>div {display: table-cell; border-left:1px solid transparent; border-bottom:0;}
+    .hotspot-container,
+    .hero-container,
+    .hero-image, .splash-container {max-width: 100%; }
+    .hero-container {position: relative; max-width:90%; margin:0 auto;height: 0; padding-bottom: 575px; } 
+    #mobile-carousel-container {position: absolute; top: 0; left:0; }
+
+    #carousel, .carousel-container {width:90%; text-align: center;}
+    .whats-yours-cta,.everyone-cta, .everyday-cta, .whats-your-cookie-cta, .splash-container {margin:0 auto; width:90%;}
+    .yellow-line {margin:30px auto;}
+
+   .desktop {display:none;}
+    .mobile {display:block;}
+    /*.hero-container {height: 450px} */
+
+}
